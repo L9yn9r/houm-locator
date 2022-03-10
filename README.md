@@ -1,16 +1,21 @@
 # Houm-locator
-Proyecto prueba houm desarrollador backend
+Proyecto prueba houm desarrollador backend.
 
 La solución fue desarrollada con Python Flask y MongoDB
-El proyecto puede ser contenerizado via docker o puede ejecutarse
-directamente desde un IDE
+El proyecto puede ser contenerizado via docker-compose 
+o puede ejecutarse directamente desde un IDE.
+
+Para una publicación final en producción del servicio en 
+cuanto a su seguridad propondría; la implementación ya 
+sea de un módulo de autenticación por JWT o una capa para 
+su certificación por medio de SSL.
 
 Se deben crear las siguientes locaciones como simulación de las propiedades de Houm
 con el siguiente servicio se pueden crear las propiedades
 [POST] http://127.0.0.1:3000/houmproperty
 y en el Body se envía cada una de las propiedades
 
-# propiedad 2
+# propiedad 1
 {
 "idHoumProperty": "PROPCLL147",
 "latitud": "4.729462",
@@ -66,6 +71,11 @@ y en el Body se envía cada una de las propiedades
 La aplicación movil cliente se debe reportar cada segundo 
 para hacer la estimación del tiempo y movimientos con 
 un formato igual al Body del Request para reportar posición
+
+Se detecta el alejamiento o salida de las propiedades por medio 
+del cambio de las coordenadas geográficas que equivalgan a una 
+distancia mayor o igual a 100 metros.
+
 
 [POST] http://127.0.0.1:3000/setactualposition
 
