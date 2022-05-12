@@ -1,7 +1,9 @@
-# Houm-locator
-Proyecto prueba houm desarrollador backend
+#locator
 
-La solución fue desarrollada con Python Flask y MongoDB
+Sistema de posicionamiento
+
+
+La solución fue desarrollada con Python  y MongoDB
 El proyecto puede ser contenerizado via docker o puede ejecutarse
 directamente desde un IDE
 
