@@ -1,4 +1,4 @@
-#locator
+# locator
 
 Sistema de posicionamiento
 
@@ -59,11 +59,11 @@ y en el Body se envía cada una de las propiedades
 "$date": 1646579219922
 }
 
-# Para Consultar propiedades Houm
+# Para Consultar propiedades 
 [GET] http://127.0.0.1:3000/houmproperties
 
 
-# Reportar Posición de Houmer
+# Reportar Posición de 
 
 La aplicación movil cliente se debe reportar cada segundo 
 para hacer la estimación del tiempo y movimientos con 
